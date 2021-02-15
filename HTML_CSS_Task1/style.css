@@ -1,0 +1,233 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.firstpage {
+    background-image: url('Img/Home_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+p {
+    font-size: 16px;
+    color: #616368;
+}
+.editor {
+    border-radius: 100px;
+    font-size: 18px;
+    background-color: #e2eaed;
+    color: #242f51;
+    font-weight: 400;
+    padding: 0px 70px 0px 0px;
+}
+.editor img {
+    background-color: #feaa25;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+.buttonclass {
+    border-radius: 100px;
+}
+.buttonclass strong {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.increase {
+    font-size: 18px;
+    font-weight: 400;
+}
+.best {
+    font-size: 60px;
+    font-weight: 600;
+    color: #242f51;
+    font-weight: 600;
+}
+.watch {
+    font-weight: 400;
+}
+.head {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 70px;
+}
+.img-at-end {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    z-index: 0;
+    margin-top: 160px;
+}
+.company {
+    align-items: center;
+}
+.img-at-mid {
+    position: absolute;
+    z-index: 50;
+    width: 40%;
+    height: auto;
+    margin-top: 150px;
+}
+.img-on-top {
+    position: absolute;
+    z-index: 100;
+}
+.awesome {
+    color: #242f51;
+    font-size: 36px;
+    font-weight: 600;
+}
+.spphone {
+    margin-top: 120px;
+}
+.spphone .feature .feature-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    margin-top: 20px;
+    padding: 15px 10px 10px 15px;
+}
+/* performance */
+.pinkcolor {
+    background-color: #ffecef;
+}
+.fastperformance {
+    margin-left: 50px;
+}
+.fastperformancecolor {
+    color: #f55767;
+}
+/* Prototyping */
+.bluecolor {
+    background-color: #f4f4ff;
+}
+.prototypingcolor {
+    color: #2563ff;
+}
+/* vector_editing */
+.greencolor {
+    background-color: #e4ffee;
+}
+.vectoreditingcolor {
+    color: #40975f;
+}
+/*    3rd page    */
+.smart {
+    margin-top: 250px;
+}
+.rise {
+    display: flex;
+    border-left: #c0c8cb solid 1px;
+}
+.rise p {
+    padding-left: 49px;
+}
+/*    3rd page logo   */
+.logo .feature .feature-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    padding: 15px 10px 10px 15px;
+}
+/*    office     */
+.office {
+    margin-top: 110px;
+}
+.officetext {
+    display: flex;
+    padding-left: 120px;
+}
+hr {
+    margin-top: 70px;
+    border: #e2eaed 1rm solid;
+}
+/*        logo       */
+.logopos {
+    display: flex;
+    flex-direction: column;
+}
+.purplecolor {
+    background-color: #eaf9ff;
+}
+.orangecolor {
+    background-color: #fff6d3;
+}
+.darkpurplecolor {
+    background-color: #f4f4ff;
+}
+.lightpinkcolor {
+    background-color: #fdeee4;
+}
+/*   phone   */
+.phone-img-on-top {
+    margin-top: 155px;
+    margin-left: 250px;
+    position: absolute;
+    z-index: 100;
+}
+.businesstext {
+    font-size: 60px;
+    color: #242f51;
+    font-weight: 600;
+}
+.btnpd {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.btn1 {
+    /*box-shadow: 5px 10px 30px rgba(0,0,0,0.3);   */
+    border-radius: 100px;
+}
+.darkblue {
+    background-color: #09142E;
+}
+.darkbluefont {
+    color: #09142E;
+}
+.logosize {
+    font-size: 30px;
+    color: #616368;
+}
+.copyfont {
+    font-size: 14px;
+}
+
+.applepd{
+    margin-left: 20px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    display: float;
+    background-color: #f4f4ff;
+    color: #f4f4ff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #f4f4ff;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: #f4f4ff;
+    display: none;
+    overflow: hidden;
+}
+.accordion:after {
+    align-content: flex-end;
+    content: '\002B';
+    /* Unicode character for "plus" sign (+) */
+    margin-top: -3%;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+    /* Unicode character for "minus" sign (-) */
+}
