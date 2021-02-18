@@ -475,6 +475,40 @@ that no matter where functions and variables are declared, they are moved to the
 of their scope regardless of whether their scope is global or local.
 
 
+---------------------------------------------------------------------------------------------
 
+✅DOM
 
+👉Document Object Model (DOM), every HTML tag is an object
 
+innerHTML – HTML contents of the node. 
+<html> = document.documentElement
+ <body> = document.body
+  <head> = document.head
+   document.body.childNodes
+   elem.childNodes[0] === elem.firstChild
+   elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
+   
+
+ document.body.parentNode === document.documentElement 
+ 
+ 👉Searching: getElement*, querySelector*
+
+  👉document.getElementById(id)
+  elem is a reference to DOM-element with id="elem". =>> let elem = document.getElementById('elem'); 
+   elem.style.background = 'red';
+ 
+  👉querySelectorAll
+  elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
+  
+ 👉querySelector
+ elem.querySelector(css) returns the first element for the given CSS selector. 
+
+👉matches
+elem.matches(css) does not look for anything, it merely checks if elem matches the given CSS-selector. It returns true or false
+
+👉closest
+elem.closest(css) looks for the nearest ancestor that matches the CSS-selector. The elem itself is also included in the search.
+
+"getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
+querySelectorAll returns a static collection. It’s like a fixed array of elements.  "getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
