@@ -512,3 +512,43 @@ elem.closest(css) looks for the nearest ancestor that matches the CSS-selector. 
 
 "getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
 querySelectorAll returns a static collection. It’s like a fixed array of elements.  "getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
+
+
+---------------------------------------------------------------------------------------------
+
+👉JavaScript is a single-threaded programming language, which means it has a single Call Stack. Therefore it can do one thing at a time.
+
+The Call Stack is a data structure which records basically where in the program we are. 
+
+Running code on a single thread can be quite easy since you don’t have to deal with complicated scenarios that are arising in multi-threaded environments — for example, deadlocks.
+
+
+👉The V8 Engine also uses several threads internally:
+The main thread does what you would expect: fetch your code, compile it and then execute it
+There’s also a separate thread for compiling, so that the main thread can keep executing while the former is optimizing the code
+A Profiler thread that will tell the runtime on which methods we spend a lot of time so that Crankshaft can optimize them
+A few threads to handle Garbage Collector sweeps
+
+----------------------------------------------------------------------------------------------------
+✅Give current position of arrow
+
+<script>
+let scheduled = null;
+window.addEventListener("mousemove", event => {
+if (!scheduled) {
+setTimeout(() => {
+document.body.textContent =
+`Mouse at ${scheduled.pageX}, ${scheduled.pageY}`;
+scheduled = null;
+}, 250);
+}
+scheduled = event;
+});
+</script>
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
